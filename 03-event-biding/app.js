@@ -1,9 +1,19 @@
 const app = Vue.createApp({
-  data() {
-    return {
-      counter: 0,
-    };
-  },
+    data() {
+        return {
+            counter: 0,
+        };
+    },
+
+    methods: {
+        addToCounter() {
+            this.counter++
+        },
+
+        subtractFromCounter() {
+            this.counter--
+        }
+    }
 });
 
 app.mount('#events');
