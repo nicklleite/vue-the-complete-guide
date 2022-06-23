@@ -9,18 +9,19 @@
                 rel="stylesheet"
         />
         <link rel="stylesheet" href="styles.css"/>
-        <script src="https://unpkg.com/vue@next" defer></script>
-        <script src="app.js" defer></script>
     </head>
     <body>
-    <header>
-        <h1>Vue Events</h1>
-    </header>
-    <section id="events">
-        <h2>Events in Action</h2>
-        <button @click="addToCounter()">Add</button>
-        <button @click="subtractFromCounter()">Reduce</button>
-        <p>Result: {{ counter }}</p>
-    </section>
+        <header>
+            <h1>Vue Events</h1>
+        </header>
+        <section id="events">
+            <h2>Events in Action</h2>
+            <button @click="addToCounter(5)">Add</button>
+            <button @click="subtractFromCounter(2)">Reduce</button>
+            <p>Result: {{ counter }}</p>
+        </section>
+
+        <script src="../vue.global.js" defer></script>
+        <script src="app.js" defer></script>
     </body>
 </html>
