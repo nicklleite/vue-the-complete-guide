@@ -19,6 +19,11 @@
             <button @click="addToCounter(5)">Add</button>
             <button @click="subtractFromCounter(2)">Reduce</button>
             <p>Result: {{ counter }}</p>
+
+            <input type="text" @input="setName">
+<!--            In case of need to pass one or more parameters to the method-->
+<!--            <input type="text" @input="setName($event, otherParameter)">-->
+            <p>Your Name: {{ name }}</p>
         </section>
 
         <script src="../vue.global.js" defer></script>
