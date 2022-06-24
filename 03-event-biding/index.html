@@ -18,6 +18,7 @@
             <h2>Events in Action</h2>
             <button @click="addToCounter(5)">Add</button>
             <button @click.right="subtractFromCounter(2)">Reduce</button>
+            <p v-once>Starting Counter: {{ counter }}</p>
             <p>Result: {{ counter }}</p>
 
             <input type="text" @input="setName" @keyup.enter="confirmName">
