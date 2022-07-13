@@ -6,7 +6,11 @@ const app = Vue.createApp({
             boxCSelected: false
         }
     },
-    computed: {},
+    computed: {
+        boxAClasses() {
+            return { active: this.boxASelected }
+        }
+    },
     watch: {},
     methods: {
         selectBox(box) {
