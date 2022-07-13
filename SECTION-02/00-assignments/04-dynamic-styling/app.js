@@ -1,10 +1,26 @@
 const app = Vue.createApp({
     data() {
-        return {}
+        return {
+            styleClass: '',
+            visibility: true,
+            styleColor: ''
+        }
     },
-    computed: {},
+    computed: {
+        visibilityClass() {
+            if (this.visibility) {
+                return "visible";
+            }
+
+            return "hidden"
+        }
+    },
     watch: {},
-    methods: {}
+    methods: {
+        toggleVisibility() {
+            this.visibility = !this.visibility
+        }
+    }
 });
 
 app.mount("#assignment");
